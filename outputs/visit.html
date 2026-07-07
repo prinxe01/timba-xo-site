@@ -1,160 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visit Timba XO | Contact, Hours & Booking</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div class="site-shell">
-      <header class="topbar">
-        <div class="topbar__inner">
-          <a class="brand" href="./index.html">
-            <div class="brand__crest">XO</div>
-            <div class="brand__text">
-              <strong>Timba XO</strong>
-              <span>Eldoret's nightlife landmark</span>
-            </div>
-          </a>
-          <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
-          <nav class="nav">
-            <a href="./index.html">Home</a>
-            <a href="./experience.html">Experience</a>
-            <a href="./visit.html" aria-current="page">Visit</a>
-            <a href="https://www.facebook.com/XOTimba/" target="_blank" rel="noreferrer">Facebook</a>
-          </nav>
-        </div>
-      </header>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Visit Timba XO on Eldoret-Nakuru Road. Open 24 hours. Call 0725 919 132.">
+  <title>Visit & Reservations | Timba XO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="visit-page">
+  <header class="site-header">
+    <a class="logo" href="./index.html" aria-label="Timba XO home"><span>TIMBA</span><b>XO</b></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav"><a href="./index.html">Home</a><a href="./experience.html">Experience</a><a href="./gallery.html">Gallery</a><a class="active" href="./visit.html">Visit</a></nav><a class="header-cta" href="tel:+254725919132">Reserve a table <span>↗</span></a>
+  </header>
+  <main>
+    <section class="visit-hero section-pad">
+      <div class="visit-hero__title reveal"><p class="kicker"><span></span> Pull up</p><h1>Your next<br>story starts<br><em>right here.</em></h1></div>
+      <div class="visit-hero__image reveal"><img src="./assets/gallery-01.jpg" alt="Timba XO entrance on Eldoret-Nakuru Road"></div>
+      <div class="visit-hero__facts reveal">
+        <div><span>Address</span><p>Eldoret–Nakuru Road<br>Eldoret, Kenya</p><a href="https://www.google.com/maps/search/?api=1&query=Timba+XO+Eldoret" target="_blank" rel="noreferrer">Open in Google Maps ↗</a></div>
+        <div><span>Hours</span><p>Open 24 hours<br>Every day</p></div>
+        <div><span>Reservations</span><a class="big-phone" href="tel:+254725919132">0725 919 132</a></div>
+      </div>
+    </section>
 
-      <main class="page">
-        <section class="section">
-          <div class="section-header reveal">
-            <div>
-              <div class="eyebrow">Visit & Convert</div>
-              <h1>Make Arrival Frictionless</h1>
-            </div>
-            <p class="section-copy">
-              The search profile already gives the essentials. This page turns those facts into a cleaner booking and visit flow:
-              location, phone, hours, social routing, and a quick inquiry form for tables or events.
-            </p>
-          </div>
+    <section class="reservation section-pad">
+      <div class="reservation__intro reveal"><p class="kicker dark"><span></span> Make it official</p><h2>Tell us what<br>you’re planning.</h2><p>For table, group and event enquiries, share the basics below. We’ll prepare a call-ready summary for the Timba XO team.</p></div>
+      <form class="reservation-form reveal" data-booking-form>
+        <label><span>Your name</span><input name="name" type="text" placeholder="e.g. Wanjiku" required></label>
+        <label><span>Phone number</span><input name="phone" type="tel" placeholder="07xx xxx xxx" required></label>
+        <label><span>Group size</span><select name="guests"><option>2–4 guests</option><option>5–8 guests</option><option>9–15 guests</option><option>16+ guests / event</option></select></label>
+        <label><span>The plan</span><select name="plan"><option>Dinner and drinks</option><option>Lounge table</option><option>VVIP night out</option><option>Birthday or celebration</option><option>Private event enquiry</option></select></label>
+        <label class="full"><span>Anything else?</span><textarea name="notes" rows="4" placeholder="Date, preferred time or anything the team should know"></textarea></label>
+        <button class="submit-booking" type="submit">Prepare my enquiry <span>↗</span></button>
+        <p class="form-note" data-booking-note>This demo does not send personal information. It prepares a summary on your device.</p>
+      </form>
+    </section>
 
-          <div class="contact-grid">
-            <section class="contact-card reveal">
-              <span class="tag">Venue Details</span>
-              <h3>Contact Timba XO</h3>
-              <div class="mini-list">
-                <div>
-                  <strong>Address</strong>
-                  Eldoret - Nakuru Rd, Eldoret
-                </div>
-                <div>
-                  <strong>Phone</strong>
-                  <a href="tel:+254725919132">0725 919132</a>
-                </div>
-                <div>
-                  <strong>Hours</strong>
-                  Open 24 hours
-                </div>
-                <div>
-                  <strong>Best For</strong>
-                  Dinner meetups, lounge nights, VVIP bookings, nightlife events
-                </div>
-              </div>
-            </section>
-
-            <section class="booking-card reveal">
-              <span class="tag">Booking Screen</span>
-              <h3>Reserve A Table Or Ask About An Event</h3>
-              <p>
-                This form is designed as a high-intent conversion block. In a live build, it could route to WhatsApp,
-                email, a CRM, or direct venue staff.
-              </p>
-              <form class="booking-form">
-                <label>
-                  Name
-                  <input type="text" placeholder="Your name" />
-                </label>
-                <label>
-                  Phone
-                  <input type="tel" placeholder="07xx xxx xxx" />
-                </label>
-                <label>
-                  Guests
-                  <select>
-                    <option>2-4 guests</option>
-                    <option>5-8 guests</option>
-                    <option>9+ guests</option>
-                  </select>
-                </label>
-                <label>
-                  Preferred vibe
-                  <select>
-                    <option>Dinner & drinks</option>
-                    <option>Lounge table</option>
-                    <option>VVIP night out</option>
-                    <option>Birthday or event</option>
-                  </select>
-                </label>
-                <label class="field--wide">
-                  Notes
-                  <textarea rows="5" placeholder="Tell Timba XO what kind of night you're planning."></textarea>
-                </label>
-                <a class="cta field--wide" href="tel:+254725919132">Call To Confirm</a>
-              </form>
-            </section>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="section-header reveal">
-            <div>
-              <div class="eyebrow">FAQ Screen</div>
-              <h2>Answer The Questions People Already Ask In Search</h2>
-            </div>
-          </div>
-
-          <div class="feature-grid">
-            <article class="faq-card reveal">
-              <span class="tag">Question 01</span>
-              <h3>Where Is Timba XO?</h3>
-              <p>
-                The shared profile places the venue on Eldoret - Nakuru Road in Eldoret, making location clarity an easy win on the website.
-              </p>
-            </article>
-            <article class="faq-card reveal">
-              <span class="tag">Question 02</span>
-              <h3>What Kind Of Place Is It?</h3>
-              <p>
-                The strongest consistent positioning is night club, VVIP lounge, and restaurant. The site should reinforce all three equally.
-              </p>
-            </article>
-            <article class="faq-card reveal">
-              <span class="tag">Question 03</span>
-              <h3>How Long Do People Stay?</h3>
-              <p>
-                The shared profile notes guests typically spend one to four hours, which is perfect for messaging around dinner, drinks, and late-night extension.
-              </p>
-            </article>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <p>Timba XO concept website • <span data-year></span></p>
-        <div class="button-row">
-          <a class="ghost" href="./experience.html">Back To Experience</a>
-          <a class="cta" href="./index.html">Return Home</a>
-        </div>
-      </footer>
-    </div>
-    <script src="./app.js"></script>
-  </body>
+    <section class="connect-strip">
+      <p>See what’s happening before you arrive.</p>
+      <a href="https://www.instagram.com/timbaxo/?hl=en" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.facebook.com/XOTimba/" target="_blank" rel="noreferrer">Facebook ↗</a><a href="https://www.tiktok.com/@xotimba" target="_blank" rel="noreferrer">TikTok ↗</a><a href="https://x.com/XOTimba" target="_blank" rel="noreferrer">X / Twitter ↗</a>
+    </section>
+  </main>
+  <dialog class="booking-dialog" data-booking-dialog><button type="button" data-dialog-close aria-label="Close">×</button><p class="kicker dark"><span></span> Your enquiry</p><h2>Ready when you are.</h2><p data-booking-summary></p><a href="tel:+254725919132">Call Timba XO now ↗</a></dialog>
+  <footer class="site-footer"><div><a class="logo logo--footer" href="./index.html"><span>TIMBA</span><b>XO</b></a><p>Eldoret’s restaurant, VVIP lounge and nightlife landmark.</p></div><div><span>Find us</span><p>Eldoret–Nakuru Road<br>Eldoret, Kenya</p></div><div><span>Talk to us</span><a href="tel:+254725919132">0725 919 132</a><p>Open 24 hours</p></div><a class="footer-action" href="./gallery.html">See the gallery <b>↗</b></a><small>© <span data-year></span> Timba XO. All nights reserved.</small></footer>
+  <script src="./app.js"></script>
+</body>
 </html>

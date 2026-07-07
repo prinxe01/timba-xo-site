@@ -1,221 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Timba XO | Eldoret Nightlife, Lounge & Restaurant</title>
-    <meta
-      name="description"
-      content="A multi-screen website concept for Timba XO in Eldoret, built from the shared business profile, images, and nightlife positioning."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div class="site-shell">
-      <header class="topbar">
-        <div class="topbar__inner">
-          <a class="brand" href="./index.html">
-            <div class="brand__crest">XO</div>
-            <div class="brand__text">
-              <strong>Timba XO</strong>
-              <span>Eldoret's nightlife landmark</span>
-            </div>
-          </a>
-          <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
-          <nav class="nav">
-            <a href="./index.html" aria-current="page">Home</a>
-            <a href="./experience.html">Experience</a>
-            <a href="./visit.html">Visit</a>
-            <a href="tel:+254725919132">0725 919132</a>
-          </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Timba XO, Eldoret's 24-hour restaurant, VVIP lounge and award-winning nightlife destination.">
+  <title>Timba XO | Eldoret Eats. Eldoret Moves.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="./index.html" aria-label="Timba XO home"><span>TIMBA</span><b>XO</b></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a class="active" href="./index.html">Home</a>
+      <a href="./experience.html">Experience</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="./visit.html">Visit</a>
+    </nav>
+    <a class="header-cta" href="tel:+254725919132">Reserve a table <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="home-hero">
+      <div class="home-hero__media" role="img" aria-label="Timba XO illuminated exterior at night"></div>
+      <div class="grain"></div>
+      <div class="home-hero__content reveal">
+        <p class="kicker"><span></span> Eldoret · Kenya · Open 24 hours</p>
+        <h1>Eldoret<br><em>after dark</em><br>hits different.</h1>
+        <div class="hero-bottom">
+          <p>Restaurant by day. VVIP lounge by night. The city’s most talked-about energy, all under one roof.</p>
+          <a class="circle-link" href="./experience.html" aria-label="Discover the Timba XO experience"><span>Discover<br>the XO</span><b>↓</b></a>
         </div>
-      </header>
+      </div>
+      <div class="hero-index">01 / 04</div>
+    </section>
 
-      <main class="page">
-        <section class="hero">
-          <article class="hero__lead reveal">
-            <div class="hero__content">
-              <div class="eyebrow">Eldoret - Nakuru Rd - Open 24 Hours</div>
-              <h1>Nightlife With a Main-Character Entrance</h1>
-              <p class="hero__copy">
-                Timba XO is positioned as Eldoret's number one night club, VVIP lounge, and restaurant.
-                This concept turns that identity into a high-energy hospitality site with bolder storytelling,
-                stronger conversion points, and imagery pulled from the shared venue profile.
-              </p>
-              <div class="hero__actions">
-                <a class="cta" href="./visit.html">Plan Your Night</a>
-                <a class="ghost" href="./experience.html">See The Experience</a>
-              </div>
-              <div class="hero__meta">
-                <div class="stat">
-                  <strong>1.3K+</strong>
-                  <span>Google reviews surfaced on the shared profile</span>
-                </div>
-                <div class="stat">
-                  <strong>1-4 Hrs</strong>
-                  <span>Typical time people spend at the venue</span>
-                </div>
-                <div class="stat">
-                  <strong>24/7</strong>
-                  <span>Always-on destination for food, lounge, and nightlife</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <aside class="hero__side">
-            <div class="panel reveal">
-              <span class="tag">Built From Shared Page Signals</span>
-              <h3>Entrance. Energy. Recognition.</h3>
-              <p>
-                The venue already shows strong brand signage, a lounge setup, food service, and high social proof.
-                The site leans into those assets instead of hiding them behind generic club visuals.
-              </p>
-              <div class="pills">
-                <span class="pill">Night Club</span>
-                <span class="pill">VVIP Lounge</span>
-                <span class="pill">Restaurant</span>
-                <span class="pill">Eldoret</span>
-              </div>
-            </div>
-
-            <div class="panel panel--image reveal">
-              <img src="./assets/timba-lounge.jpg" alt="Timba XO lounge seating area" />
-            </div>
-          </aside>
-        </section>
-
-        <section class="section">
-          <div class="section-header reveal">
-            <div>
-              <div class="eyebrow">Screen One • Brand Gallery</div>
-              <h2>Use The Venue Photos As The Interface Backbone</h2>
-            </div>
-            <p class="section-copy">
-              Instead of a stock nightlife page, the concept uses the shared imagery repeatedly: the branded entrance
-              for authority, the lounge floor for atmosphere, and the dining shots to prove Timba XO is more than a club.
-            </p>
-          </div>
-
-          <div class="gallery-grid">
-            <figure class="gallery-card reveal">
-              <img src="./assets/timba-hero.jpg" alt="Timba XO entrance and logo" />
-              <figcaption class="gallery-card__caption">
-                <strong>Arrival Frame</strong>
-                <div>Perfect for the homepage hero and brand reveal.</div>
-              </figcaption>
-            </figure>
-            <figure class="gallery-card reveal">
-              <img src="./assets/timba-floor.jpg" alt="Timba XO table atmosphere" />
-              <figcaption class="gallery-card__caption">
-                <strong>Table Energy</strong>
-                <div>Builds a lived-in social scene around bottles, service, and people.</div>
-              </figcaption>
-            </figure>
-            <figure class="gallery-card reveal">
-              <img src="./assets/timba-crowd.jpg" alt="Food plate at Timba XO" />
-              <figcaption class="gallery-card__caption">
-                <strong>Restaurant Proof</strong>
-                <div>Keeps the restaurant identity visible instead of burying it.</div>
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="section-header reveal">
-            <div>
-              <div class="eyebrow">Screen Two • Highlights</div>
-              <h2>The Three Stories The Website Should Tell Immediately</h2>
-            </div>
-          </div>
-
-          <div class="feature-grid">
-            <article class="feature-card reveal">
-              <span class="tag">01</span>
-              <h3>Nightlife Authority</h3>
-              <p>
-                Timba XO is consistently surfaced as Eldoret's number one nightlife destination. The design uses large
-                type, dramatic overlays, and quick reservation prompts to match that confidence.
-              </p>
-            </article>
-            <article class="feature-card reveal">
-              <span class="tag">02</span>
-              <h3>Lounge Comfort</h3>
-              <p>
-                The lounge imagery supports a more polished hospitality story: group seating, VVIP energy, and a venue
-                built for longer stays rather than quick drop-ins.
-              </p>
-            </article>
-            <article class="feature-card reveal">
-              <span class="tag">03</span>
-              <h3>Restaurant Layer</h3>
-              <p>
-                Food visuals and restaurant copy keep the site commercially broader. That matters if the venue wants
-                daytime discovery, family dining, or event bookings beyond nightlife.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="section-header reveal">
-            <div>
-              <div class="eyebrow">Screen Three • Signature Flow</div>
-              <h2>Map The Night From Arrival To Late Hours</h2>
-            </div>
-            <p class="section-copy">
-              This content block gives the user a reason to stay on the page: it turns venue identity into a clear guest journey.
-            </p>
-          </div>
-
-          <div class="timeline reveal">
-            <div class="timeline__overlay">
-              <h3>One Destination, Multiple Moods</h3>
-              <p class="section-copy">
-                A visitor can move from dinner to lounge seating to a louder late-night crowd without ever leaving the brand world.
-              </p>
-              <div class="timeline__items">
-                <div class="timeline__item">
-                  <div class="timeline__time">6 PM</div>
-                  <strong>Early Plates</strong>
-                  <p>Restaurant service and low-light arrival energy.</p>
-                </div>
-                <div class="timeline__item">
-                  <div class="timeline__time">9 PM</div>
-                  <strong>Lounge Build-Up</strong>
-                  <p>Table bookings, bottle service, and bigger groups settle in.</p>
-                </div>
-                <div class="timeline__item">
-                  <div class="timeline__time">11 PM</div>
-                  <strong>Main Floor Lift</strong>
-                  <p>The sound, lighting, and social rhythm become the lead story.</p>
-                </div>
-                <div class="timeline__item">
-                  <div class="timeline__time">Late</div>
-                  <strong>Open 24 Hours</strong>
-                  <p>The site can own after-hours traffic with no ambiguity on timing.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <p>Concept site for Timba XO using the shared Google profile details and venue imagery.</p>
-        <div class="button-row">
-          <a class="ghost" href="./experience.html">Next: Experience</a>
-          <a class="cta" href="./visit.html">Next: Visit</a>
-        </div>
-      </footer>
+    <div class="ticker" aria-label="Timba XO highlights">
+      <div class="ticker__track">
+        <span>Night club</span><i>✦</i><span>VVIP lounge</span><i>✦</i><span>Restaurant</span><i>✦</i><span>24 hours</span><i>✦</i><span>Nightlife trendsetter</span><i>✦</i>
+        <span>Night club</span><i>✦</i><span>VVIP lounge</span><i>✦</i><span>Restaurant</span><i>✦</i><span>24 hours</span><i>✦</i><span>Nightlife trendsetter</span><i>✦</i>
+      </div>
     </div>
-    <script src="./app.js"></script>
-  </body>
+
+    <section class="manifesto section-pad">
+      <div class="manifesto__label reveal"><span>02</span> The XO feeling</div>
+      <div class="manifesto__copy reveal">
+        <p>Some places serve a night out.</p>
+        <h2>We build the <em>whole story.</em></h2>
+        <p class="lede">Come hungry. Settle into the lounge. Let the sound system take over. Timba XO moves at your pace until you are ready to move at ours.</p>
+      </div>
+    </section>
+
+    <section class="moods section-pad">
+      <article class="mood-card mood-card--wide reveal">
+        <img src="./assets/gallery-04.jpg" alt="Spacious Timba XO dining and club floor" loading="lazy">
+        <div class="mood-card__content"><span>01 · Dine</span><h3>Come for the plates.</h3><p>Local favourites, generous grills and a room made for long conversations.</p></div>
+      </article>
+      <article class="mood-card mood-card--tall reveal">
+        <img src="./assets/gallery-06.jpg" alt="Timba XO dance floor under blue club lights" loading="lazy">
+        <div class="mood-card__content"><span>02 · Move</span><h3>Stay for the pulse.</h3><p>Big sound, blue light and a dance floor with no quiet mode.</p></div>
+      </article>
+      <article class="mood-card mood-card--small reveal">
+        <img src="./assets/timba-lounge.jpg" alt="Timba XO lounge seating" loading="lazy">
+        <div class="mood-card__content"><span>03 · Belong</span><h3>Make it your table.</h3><p>VVIP comfort for birthdays, crews and nights worth dressing up for.</p></div>
+      </article>
+    </section>
+
+    <section class="proof section-pad">
+      <div class="proof__intro reveal">
+        <p class="kicker dark"><span></span> The city has spoken</p>
+        <h2>Big room.<br><em>Bigger reputation.</em></h2>
+      </div>
+      <div class="proof__stats reveal">
+        <div><strong>4.2</strong><span>Google rating</span></div>
+        <div><strong>1,286</strong><span>Google reviews</span></div>
+        <div><strong>51K+</strong><span>Instagram community</span></div>
+        <div><strong>24/7</strong><span>Always open</span></div>
+      </div>
+    </section>
+
+    <section class="testimonials section-pad">
+      <div class="section-heading reveal">
+        <p class="kicker"><span></span> Guest notes</p>
+        <h2>They came. They stayed.<br><em>They left a review.</em></h2>
+      </div>
+      <div class="review-stage reveal" data-reviews>
+        <article class="review is-active">
+          <div class="stars">★★★★★</div>
+          <blockquote>“Magical, classy, luxurious — and not expensive as I would have expected.”</blockquote>
+          <p>Christina Muthoni <span>· Google review</span></p>
+        </article>
+        <article class="review">
+          <div class="stars">★★★★★</div>
+          <blockquote>“A great place to have fun, unwind, and dance your stress away.”</blockquote>
+          <p>Joel Manyasi <span>· Google review</span></p>
+        </article>
+        <article class="review">
+          <div class="stars">★★★★★</div>
+          <blockquote>“A great place to relax and enjoy some delicious food during the day.”</blockquote>
+          <p>Gideon Ngetich <span>· Google review</span></p>
+        </article>
+        <div class="review-controls">
+          <button type="button" data-review-prev aria-label="Previous review">←</button>
+          <span data-review-count>01 / 03</span>
+          <button type="button" data-review-next aria-label="Next review">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-callout">
+      <div class="social-callout__image"><img src="./assets/gallery-07.jpg" alt="Timba XO main floor and stage" loading="lazy"></div>
+      <div class="social-callout__copy reveal">
+        <p class="kicker dark"><span></span> Follow the night</p>
+        <h2>Tonight starts<br>on your feed.</h2>
+        <p>New drops, guest DJs, party recaps and the people who make XO move.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/timbaxo/?hl=en" target="_blank" rel="noreferrer">Instagram <span>↗</span></a>
+          <a href="https://www.facebook.com/XOTimba/" target="_blank" rel="noreferrer">Facebook <span>↗</span></a>
+          <a href="https://www.tiktok.com/@xotimba" target="_blank" rel="noreferrer">TikTok <span>↗</span></a>
+          <a href="https://x.com/XOTimba" target="_blank" rel="noreferrer">X / Twitter <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><a class="logo logo--footer" href="./index.html"><span>TIMBA</span><b>XO</b></a><p>Eldoret’s restaurant, VVIP lounge and nightlife landmark.</p></div>
+    <div><span>Find us</span><p>Eldoret–Nakuru Road<br>Eldoret, Kenya</p></div>
+    <div><span>Talk to us</span><a href="tel:+254725919132">0725 919 132</a><p>Open 24 hours</p></div>
+    <a class="footer-action" href="./visit.html">Plan your night <b>↗</b></a>
+    <small>© <span data-year></span> Timba XO. All nights reserved.</small>
+  </footer>
+  <script src="./app.js"></script>
+</body>
 </html>
