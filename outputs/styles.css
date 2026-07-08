@@ -209,6 +209,8 @@ h1 em, h2 em { color: var(--orange); font-style: italic; font-weight: 700; }
 .submit-booking { grid-column: 1 / -1; padding: 1.15rem 1.3rem; border: 0; background: var(--ink); color: var(--paper); display: flex; justify-content: space-between; text-transform: uppercase; letter-spacing: .13em; font-size: .7rem; cursor: pointer; }
 .submit-booking:hover { background: var(--orange); color: var(--ink); }
 .form-note { grid-column: 1 / -1; margin: -.8rem 0 0; color: rgba(8,10,12,.5); font-size: .67rem; line-height: 1.5; }
+.form-note.is-error { color: #a72d14; }
+.hp-field { position: absolute !important; width: 1px !important; height: 1px !important; overflow: hidden !important; clip: rect(0 0 0 0) !important; white-space: nowrap !important; }
 .connect-strip { padding: 2rem 7vw; display: flex; align-items: center; gap: 2.4rem; background: var(--blue); color: var(--ink); }
 .connect-strip p { margin-right: auto; font-family: var(--display); font-size: 1.6rem; text-transform: uppercase; }
 .connect-strip a { font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; }

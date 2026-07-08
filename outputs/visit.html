@@ -27,13 +27,14 @@
     <section class="reservation section-pad">
       <div class="reservation__intro reveal"><p class="kicker dark"><span></span> Make it official</p><h2>Tell us what<br>you’re planning.</h2><p>For table, group and event enquiries, share the basics below. We’ll prepare a call-ready summary for the Timba XO team.</p></div>
       <form class="reservation-form reveal" data-booking-form>
+        <label class="hp-field" aria-hidden="true"><span>Company website</span><input name="website" type="text" tabindex="-1" autocomplete="off"></label>
         <label><span>Your name</span><input name="name" type="text" placeholder="e.g. Wanjiku" required></label>
         <label><span>Phone number</span><input name="phone" type="tel" placeholder="07xx xxx xxx" required></label>
         <label><span>Group size</span><select name="guests"><option>2–4 guests</option><option>5–8 guests</option><option>9–15 guests</option><option>16+ guests / event</option></select></label>
         <label><span>The plan</span><select name="plan"><option>Dinner and drinks</option><option>Lounge table</option><option>VVIP night out</option><option>Birthday or celebration</option><option>Private event enquiry</option></select></label>
         <label class="full"><span>Anything else?</span><textarea name="notes" rows="4" placeholder="Date, preferred time or anything the team should know"></textarea></label>
-        <button class="submit-booking" type="submit">Prepare my enquiry <span>↗</span></button>
-        <p class="form-note" data-booking-note>This demo does not send personal information. It prepares a summary on your device.</p>
+        <button class="submit-booking" type="submit" data-booking-submit>Save and continue to WhatsApp <span>↗</span></button>
+        <p class="form-note" data-booking-note aria-live="polite">Your enquiry will be saved securely before WhatsApp opens.</p>
       </form>
     </section>
 

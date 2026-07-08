@@ -71,16 +71,59 @@ if (lightbox) {
 
 const bookingForm = document.querySelector('[data-booking-form]');
 const bookingDialog = document.querySelector('[data-booking-dialog]');
+const reservationEndpoint = 'https://iliokwwipkcoytjdryty.supabase.co/functions/v1/reservation-enquiry';
 if (bookingForm && bookingDialog) {
-  bookingForm.addEventListener('submit', (event) => {
+  bookingForm.addEventListener('submit', async (event) => {
     event.preventDefault();
     const data = new FormData(bookingForm);
     const summary = bookingDialog.querySelector('[data-booking-summary]');
     const whatsappLink = bookingDialog.querySelector('[data-booking-whatsapp]');
+    const submitButton = bookingForm.querySelector('[data-booking-submit]');
+    const formNote = bookingForm.querySelector('[data-booking-note]');
     const enquiry = `Hello Timba XO, my name is ${data.get('name')}. I'd like to arrange ${String(data.get('plan')).toLowerCase()} for ${String(data.get('guests')).toLowerCase()}. My phone number is ${data.get('phone')}.${data.get('notes') ? ` Notes: ${data.get('notes')}` : ''}`;
-    summary.textContent = `${data.get('name')} is planning ${String(data.get('plan')).toLowerCase()} for ${String(data.get('guests')).toLowerCase()}. Contact: ${data.get('phone')}.${data.get('notes') ? `\n\nNotes: ${data.get('notes')}` : ''}`;
+    const baseSummary = `${data.get('name')} is planning ${String(data.get('plan')).toLowerCase()} for ${String(data.get('guests')).toLowerCase()}. Contact: ${data.get('phone')}.${data.get('notes') ? `\n\nNotes: ${data.get('notes')}` : ''}`;
     if (whatsappLink) whatsappLink.href = `https://wa.me/254725919132?text=${encodeURIComponent(enquiry)}`;
-    bookingDialog.showModal();
+
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.innerHTML = 'Saving enquiry… <span>↗</span>';
+    }
+    formNote?.classList.remove('is-error');
+    if (formNote) formNote.textContent = 'Saving your enquiry securely…';
+
+    try {
+      const response = await fetch(reservationEndpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          requestId: crypto.randomUUID(),
+          name: data.get('name'),
+          phone: data.get('phone'),
+          guests: data.get('guests'),
+          plan: data.get('plan'),
+          notes: data.get('notes'),
+          website: data.get('website'),
+        }),
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || 'The enquiry could not be saved.');
+
+      const reference = result.id ? String(result.id).slice(0, 8).toUpperCase() : 'SAVED';
+      summary.textContent = `${baseSummary}\n\nSaved reference: ${reference}`;
+      if (formNote) formNote.textContent = 'Enquiry saved. Continue to WhatsApp to speak with the team.';
+      bookingDialog.showModal();
+    } catch (error) {
+      summary.textContent = `${baseSummary}\n\nDatabase status: not saved.`;
+      formNote?.classList.add('is-error');
+      if (formNote) formNote.textContent = 'We could not save the enquiry, but you can still continue on WhatsApp.';
+      bookingDialog.showModal();
+      console.error(error);
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.innerHTML = 'Save and continue to WhatsApp <span>↗</span>';
+      }
+    }
   });
   bookingDialog.querySelector('[data-dialog-close]')?.addEventListener('click', () => bookingDialog.close());
 }
