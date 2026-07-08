@@ -76,7 +76,10 @@ if (bookingForm && bookingDialog) {
     event.preventDefault();
     const data = new FormData(bookingForm);
     const summary = bookingDialog.querySelector('[data-booking-summary]');
+    const whatsappLink = bookingDialog.querySelector('[data-booking-whatsapp]');
+    const enquiry = `Hello Timba XO, my name is ${data.get('name')}. I'd like to arrange ${String(data.get('plan')).toLowerCase()} for ${String(data.get('guests')).toLowerCase()}. My phone number is ${data.get('phone')}.${data.get('notes') ? ` Notes: ${data.get('notes')}` : ''}`;
     summary.textContent = `${data.get('name')} is planning ${String(data.get('plan')).toLowerCase()} for ${String(data.get('guests')).toLowerCase()}. Contact: ${data.get('phone')}.${data.get('notes') ? `\n\nNotes: ${data.get('notes')}` : ''}`;
+    if (whatsappLink) whatsappLink.href = `https://wa.me/254725919132?text=${encodeURIComponent(enquiry)}`;
     bookingDialog.showModal();
   });
   bookingDialog.querySelector('[data-dialog-close]')?.addEventListener('click', () => bookingDialog.close());
