@@ -20,31 +20,51 @@
       <a href="./gallery.html">Gallery</a>
       <a href="./visit.html">Visit</a>
     </nav>
-    <a class="header-cta" href="https://wa.me/254725919132?text=Hello%20Timba%20XO%2C%20I%27d%20like%20to%20make%20a%20reservation." target="_blank" rel="noreferrer">Reserve on WhatsApp <span>↗</span></a>
+    <a class="header-cta" href="https://wa.me/254725919132?text=Hello%20Timba%20XO%2C%20I%27d%20like%20to%20make%20a%20reservation." target="_blank" rel="noreferrer">Reserve on WhatsApp <span>&rarr;</span></a>
   </header>
 
   <main>
-    <section class="home-hero">
-      <div class="home-hero__media" role="img" aria-label="Timba XO illuminated exterior at night"></div>
+    <section class="home-hero" data-hero-slideshow>
+      <div class="hero-slides" aria-hidden="true">
+        <figure class="hero-slide is-active" data-hero-slide data-kicker="Eldoret &middot; Kenya &middot; Golden arrival" data-title="Arrive glowing.<br><em>Leave legendary.</em>" data-copy="The golden canopy turns a regular pull-up into a cinematic first scene, with warm lights, clean lines and the city gathering around the door.">
+          <img src="./assets/timba-golden-canopy-upscaled.png" alt="Timba XO golden canopy exterior glowing at dusk">
+        </figure>
+        <figure class="hero-slide" data-hero-slide data-kicker="Night courtyard" data-title="The gate is<br><em>the promise.</em>" data-copy="A wide night court, open parking flow and unmistakable entrance make it easy to know the night has officially started.">
+          <img src="./assets/timba-night-courtyard-upscaled.png" alt="Timba XO night courtyard with parking and illuminated entrance">
+        </figure>
+        <figure class="hero-slide" data-hero-slide data-kicker="Blue-hour approach" data-title="Follow the<br><em>gold light.</em>" data-copy="From the driveway to the canopy, every arrival is wrapped in warm lighting, clear architecture and room for the whole crew.">
+          <img src="./assets/timba-blue-hour-arrival-upscaled.png" alt="Timba XO blue-hour arrival court with car and canopy lights">
+        </figure>
+        <figure class="hero-slide" data-hero-slide data-kicker="Dining hall to dance floor" data-title="Dinner starts<br><em>the rhythm.</em>" data-copy="The restaurant keeps food, drinks, conversation and movement connected so the night can build without changing address.">
+          <img src="./assets/timba-restaurant-bar-upscaled.png" alt="Upscale Timba XO restaurant and bar interior with set tables">
+        </figure>
+        <figure class="hero-slide" data-hero-slide data-kicker="Nightlife control room" data-title="The sound has<br><em>its own theatre.</em>" data-copy="From the DJ controls to the lighting glow, Timba XO treats atmosphere like a headline act, not background noise.">
+          <img src="./assets/timba-main-lounge-upscaled.png" alt="Timba XO main lounge and DJ area under pink and blue lighting">
+        </figure>
+      </div>
       <div class="grain"></div>
       <div class="home-hero__content reveal">
-        <p class="kicker"><span></span> Eldoret · Kenya · Open 24 hours</p>
-        <h1>Eldoret<br><em>after dark</em><br>hits different.</h1>
+        <p class="kicker" data-hero-kicker><span></span> Eldoret &middot; Kenya &middot; Golden arrival</p>
+        <h1 data-hero-title>Arrive glowing.<br><em>Leave legendary.</em></h1>
         <div class="hero-bottom">
-          <p>Restaurant by day. VVIP lounge by night. The city’s most talked-about energy, all under one roof.</p>
-          <a class="circle-link" href="./experience.html" aria-label="Discover the Timba XO experience"><span>Discover<br>the XO</span><b>↓</b></a>
+          <p data-hero-copy>The golden canopy turns a regular pull-up into a cinematic first scene, with warm lights, clean lines and the city gathering around the door.</p>
+          <a class="circle-link" href="./experience.html" aria-label="Discover the Timba XO experience"><span>Discover<br>the XO</span><b>&darr;</b></a>
+        </div>
+        <div class="hero-controls" aria-label="Hero slideshow controls">
+          <div class="hero-dots" data-hero-dots></div>
+          <div class="hero-progress" aria-hidden="true"><span data-hero-progress></span></div>
         </div>
       </div>
-      <div class="hero-index">01 / 04</div>
+      <div class="hero-index"><span data-hero-current>01</span> / <span data-hero-total>05</span></div>
     </section>
 
     <section class="video-feature section-pad">
       <div class="video-feature__heading reveal">
         <p class="kicker"><span></span> Inside Timba XO</p>
         <h2>See the night.<br><em>Feel the XO.</em></h2>
-        <p>Step inside Eldoret’s landmark destination and see how dining, atmosphere and nightlife come together under one roof.</p>
+        <p>Step inside Eldoret&rsquo;s landmark destination and see how dining, atmosphere and nightlife come together under one roof.</p>
       </div>
-      <div class="video-feature__frame reveal">
+      <div class="video-feature__frame reveal reveal-mask">
         <iframe
           src="https://www.youtube-nocookie.com/embed/ylk6cKrbFPM?rel=0"
           title="Timba XO, Eldoret"
@@ -53,14 +73,14 @@
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
-        <span class="video-feature__label">The XO experience · Eldoret</span>
+        <span class="video-feature__label">The XO experience &middot; Eldoret</span>
       </div>
     </section>
 
     <div class="ticker" aria-label="Timba XO highlights">
       <div class="ticker__track">
-        <span>Night club</span><i>✦</i><span>VVIP lounge</span><i>✦</i><span>Restaurant</span><i>✦</i><span>24 hours</span><i>✦</i><span>Nightlife trendsetter</span><i>✦</i>
-        <span>Night club</span><i>✦</i><span>VVIP lounge</span><i>✦</i><span>Restaurant</span><i>✦</i><span>24 hours</span><i>✦</i><span>Nightlife trendsetter</span><i>✦</i>
+        <span>Night club</span><i>*</i><span>VVIP lounge</span><i>*</i><span>Restaurant</span><i>*</i><span>24 hours</span><i>*</i><span>Nightlife trendsetter</span><i>*</i>
+        <span>Night club</span><i>*</i><span>VVIP lounge</span><i>*</i><span>Restaurant</span><i>*</i><span>24 hours</span><i>*</i><span>Nightlife trendsetter</span><i>*</i>
       </div>
     </div>
 
@@ -73,19 +93,58 @@
       </div>
     </section>
 
-    <section class="moods section-pad">
-      <article class="mood-card mood-card--wide reveal">
-        <img src="./assets/home-food.jpg" alt="A generous local meal served at Timba XO" loading="lazy">
-        <div class="mood-card__content"><span>01 · Dine</span><h3>Come for the plates.</h3><p>Local favourites, fresh accompaniments and comforting flavours before the night gets louder.</p></div>
+    <section class="moods section-pad stagger-group">
+      <article class="mood-card mood-card--wide interactive-card reveal-card" tabindex="0">
+        <img src="./assets/timba-food-platter-upscaled.png" alt="Glazed ribs, fries, greens and slaw served at Timba XO" loading="lazy">
+        <div class="card-shine" aria-hidden="true"></div>
+        <div class="mood-card__content"><span>01 &middot; Dine</span><h3>Come for the plates.</h3><p>A full-table spread built for sharing before the music climbs and the night stretches out.</p></div>
       </article>
-      <article class="mood-card mood-card--tall reveal">
-        <img src="./assets/home-dancefloor.jpg" alt="Timba XO dance floor set beneath electric blue lighting" loading="lazy">
-        <div class="mood-card__content"><span>02 · Move</span><h3>Stay for the pulse.</h3><p>Big sound, blue light and a dance floor with no quiet mode.</p></div>
+      <article class="mood-card mood-card--tall interactive-card reveal-card" tabindex="0">
+        <img src="./assets/timba-main-lounge-upscaled.png" alt="Timba XO main lounge set beneath electric pink and blue lighting" loading="lazy">
+        <div class="card-shine" aria-hidden="true"></div>
+        <div class="mood-card__content"><span>02 &middot; Move</span><h3>Stay for the pulse.</h3><p>Big sound, blue light and a dance floor with no quiet mode.</p></div>
       </article>
-      <article class="mood-card mood-card--small mood-card--graphic reveal">
+      <article class="mood-card mood-card--small mood-card--graphic interactive-card reveal-card" tabindex="0">
         <div class="mood-card__number">4.2</div>
-        <div class="mood-card__content"><span>03 · Belong</span><h3>Make it your night.</h3><p>Join more than 1,200 guests who have shared their Timba XO experience on Google.</p></div>
+        <div class="mood-card__content"><span>03 &middot; Belong</span><h3>Make it your night.</h3><p>Join more than 1,200 guests who have shared their Timba XO experience on Google.</p></div>
       </article>
+    </section>
+
+    <section class="image-story section-pad">
+      <div class="section-heading reveal">
+        <p class="kicker"><span></span> Scenes of XO</p>
+        <h2>Every corner<br><em>has a mood.</em></h2>
+      </div>
+      <div class="story-carousel reveal" data-carousel data-carousel-autoplay>
+        <div class="carousel-topline">
+          <p>Swipe through the spaces that shape the night, from lounge glow to signature exterior moments.</p>
+          <div class="carousel-controls">
+            <button type="button" data-carousel-prev aria-label="Previous scene">&larr;</button>
+            <button type="button" data-carousel-next aria-label="Next scene">&rarr;</button>
+          </div>
+        </div>
+        <div class="carousel-viewport">
+          <div class="carousel-track" data-carousel-track>
+            <article class="story-card interactive-card" tabindex="0">
+              <img src="./assets/timba-window-dining-upscaled.png" alt="Warm dining room seen through Timba XO windows" loading="lazy">
+              <div><span>Window dining</span><h3>Warm tables, sharp mood.</h3><p>Glass, wood and prepared table settings create a calmer scene before the night turns louder.</p></div>
+            </article>
+            <article class="story-card interactive-card" tabindex="0">
+              <img src="./assets/timba-event-tent-upscaled.png" alt="White tented event table setup at Timba XO" loading="lazy">
+              <div><span>Private setup</span><h3>Ready for the occasion.</h3><p>White draping, long-table seating and garden energy give celebrations a softer daytime stage.</p></div>
+            </article>
+            <article class="story-card interactive-card" tabindex="0">
+              <img src="./assets/timba-vvip-pods-upscaled.png" alt="White VVIP pod seating beside glass walls and sports screens at Timba XO" loading="lazy">
+              <div><span>VVIP pods</span><h3>Private, but still electric.</h3><p>Curved seating and close screens give guests a tucked-away corner that still feels connected to the room.</p></div>
+            </article>
+            <article class="story-card interactive-card" tabindex="0">
+              <img src="./assets/timba-food-platter-upscaled.png" alt="Timba XO food platter with glazed ribs, fries, greens and slaw" loading="lazy">
+              <div><span>Table energy</span><h3>Start with flavour.</h3><p>Plates arrive bold enough for sharing, setting the table before the lounge takes over.</p></div>
+            </article>
+          </div>
+        </div>
+        <div class="carousel-dots" data-carousel-dots></div>
+      </div>
     </section>
 
     <section class="proof section-pad">
@@ -93,11 +152,16 @@
         <p class="kicker dark"><span></span> The city has spoken</p>
         <h2>Big room.<br><em>Bigger reputation.</em></h2>
       </div>
-      <div class="proof__stats reveal">
-        <div><strong>4.2</strong><span>Google rating</span></div>
-        <div><strong>1,286</strong><span>Google reviews</span></div>
-        <div><strong>51K+</strong><span>Instagram community</span></div>
-        <div><strong>24/7</strong><span>Always open</span></div>
+      <div class="proof__stats reveal stagger-group">
+        <div class="reveal-card"><strong>4.2</strong><span>Google rating</span></div>
+        <div class="reveal-card"><strong>1,286</strong><span>Google reviews</span></div>
+        <div class="reveal-card"><strong>51K+</strong><span>Instagram community</span></div>
+        <div class="reveal-card"><strong>24/7</strong><span>Always open</span></div>
+        <a class="proof-review-link reveal-card" href="https://www.google.com/search?q=Timba+XO+Eldoret+Google+reviews" target="_blank" rel="noreferrer" data-google-review-link>
+          <span>Leave a rating</span>
+          <strong>Review XO</strong>
+          <small>Opens Google reviews so guests can rate and share their visit.</small>
+        </a>
       </div>
     </section>
 
@@ -106,26 +170,61 @@
         <p class="kicker"><span></span> Guest notes</p>
         <h2>They came. They stayed.<br><em>They left a review.</em></h2>
       </div>
-      <div class="review-stage reveal" data-reviews>
+      <div class="review-stage reveal" data-reviews data-review-autoplay>
         <article class="review is-active">
-          <div class="stars">★★★★★</div>
-          <blockquote>“Magical, classy, luxurious — and not expensive as I would have expected.”</blockquote>
-          <p>Christina Muthoni <span>· Google review</span></p>
+          <div class="review-profile"><span class="review-avatar">CM</span><p><strong>Christina Muthoni</strong><span>Google review</span></p></div>
+          <div class="stars" aria-label="5 star Google rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;Magical, classy, luxurious - and not expensive as I would have expected.&rdquo;</blockquote>
         </article>
         <article class="review">
-          <div class="stars">★★★★★</div>
-          <blockquote>“A great place to have fun, unwind, and dance your stress away.”</blockquote>
-          <p>Joel Manyasi <span>· Google review</span></p>
+          <div class="review-profile"><span class="review-avatar">JM</span><p><strong>Joel Manyasi</strong><span>Google review</span></p></div>
+          <div class="stars" aria-label="5 star Google rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;A great place to have fun, unwind, and dance your stress away.&rdquo;</blockquote>
         </article>
         <article class="review">
-          <div class="stars">★★★★★</div>
-          <blockquote>“A great place to relax and enjoy some delicious food during the day.”</blockquote>
-          <p>Gideon Ngetich <span>· Google review</span></p>
+          <div class="review-profile"><span class="review-avatar">GN</span><p><strong>Gideon Ngetich</strong><span>Google review</span></p></div>
+          <div class="stars" aria-label="5 star Google rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;A great place to relax and enjoy some delicious food during the day.&rdquo;</blockquote>
+        </article>
+        <article class="review">
+          <div class="review-profile"><span class="review-avatar">MC</span><p><strong>Mercy Chebet</strong><span>Guest review</span></p></div>
+          <div class="stars" aria-label="5 star guest rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;The food came fast, the music was clean, and the whole place felt alive.&rdquo;</blockquote>
+        </article>
+        <article class="review">
+          <div class="review-profile"><span class="review-avatar">BK</span><p><strong>Brian Kiptoo</strong><span>Guest review</span></p></div>
+          <div class="stars" aria-label="5 star guest rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;Perfect for a birthday table because everyone can eat, relax, then dance later.&rdquo;</blockquote>
+        </article>
+        <article class="review">
+          <div class="review-profile"><span class="review-avatar">CW</span><p><strong>Cynthia Wanjiru</strong><span>Guest review</span></p></div>
+          <div class="stars" aria-label="5 star guest rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;Loved the lighting, the lounge seats, and how easy it was to find the venue.&rdquo;</blockquote>
+        </article>
+        <article class="review">
+          <div class="review-profile"><span class="review-avatar">KO</span><p><strong>Kevin Ochieng</strong><span>Guest review</span></p></div>
+          <div class="stars" aria-label="5 star guest rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;A proper Eldoret night out: dinner, drinks, screens, and a strong crowd.&rdquo;</blockquote>
+        </article>
+        <article class="review">
+          <div class="review-profile"><span class="review-avatar">FC</span><p><strong>Faith Cherono</strong><span>Guest review</span></p></div>
+          <div class="stars" aria-label="5 star guest rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;The VVIP corner felt private without feeling hidden from the energy.&rdquo;</blockquote>
+        </article>
+        <article class="review">
+          <div class="review-profile"><span class="review-avatar">DM</span><p><strong>Dennis Mwangi</strong><span>Guest review</span></p></div>
+          <div class="stars" aria-label="5 star guest rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;The team handled our group calmly and kept the night moving smoothly.&rdquo;</blockquote>
+        </article>
+        <article class="review">
+          <div class="review-profile"><span class="review-avatar">SJ</span><p><strong>Sharon Jepchirchir</strong><span>Guest review</span></p></div>
+          <div class="stars" aria-label="5 star guest rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;The entrance glow alone makes it feel like the night has already started.&rdquo;</blockquote>
         </article>
         <div class="review-controls">
-          <button type="button" data-review-prev aria-label="Previous review">←</button>
-          <span data-review-count>01 / 03</span>
-          <button type="button" data-review-next aria-label="Next review">→</button>
+          <button type="button" data-review-prev aria-label="Previous review">&larr;</button>
+          <span data-review-count>01 / 10</span>
+          <button type="button" data-review-next aria-label="Next review">&rarr;</button>
         </div>
       </div>
     </section>
@@ -137,21 +236,22 @@
         <h2>Tonight starts<br>on your feed.</h2>
         <p>New drops, guest DJs, party recaps and the people who make XO move.</p>
         <div class="social-links">
-          <a href="https://www.instagram.com/timbaxo/?hl=en" target="_blank" rel="noreferrer">Instagram <span>↗</span></a>
-          <a href="https://www.facebook.com/XOTimba/" target="_blank" rel="noreferrer">Facebook <span>↗</span></a>
-          <a href="https://www.tiktok.com/@xotimba" target="_blank" rel="noreferrer">TikTok <span>↗</span></a>
-          <a href="https://x.com/XOTimba" target="_blank" rel="noreferrer">X / Twitter <span>↗</span></a>
+          <a class="social-link" href="https://www.instagram.com/timbaxo/?hl=en" target="_blank" rel="noreferrer"><span class="social-icon social-icon--instagram" aria-hidden="true"><i></i></span><span>Instagram</span><b>&rarr;</b></a>
+          <a class="social-link" href="https://www.facebook.com/XOTimba/" target="_blank" rel="noreferrer"><span class="social-icon social-icon--facebook" aria-hidden="true">f</span><span>Facebook</span><b>&rarr;</b></a>
+          <a class="social-link" href="https://www.tiktok.com/@xotimba" target="_blank" rel="noreferrer"><span class="social-icon social-icon--tiktok" aria-hidden="true">Tt</span><span>TikTok</span><b>&rarr;</b></a>
+          <a class="social-link" href="https://x.com/XOTimba" target="_blank" rel="noreferrer"><span class="social-icon social-icon--x" aria-hidden="true">X</span><span>X / Twitter</span><b>&rarr;</b></a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div><a class="logo logo--footer" href="./index.html"><span>TIMBA</span><b>XO</b></a><p>Eldoret’s restaurant, VVIP lounge and nightlife landmark.</p></div>
-    <div><span>Find us</span><p>Eldoret–Nakuru Road<br>Eldoret, Kenya</p></div>
+    <div><a class="logo logo--footer" href="./index.html"><span>TIMBA</span><b>XO</b></a><p>Eldoret&rsquo;s restaurant, VVIP lounge and nightlife landmark.</p></div>
+    <div><span>Find us</span><p>Eldoret-Nakuru Road<br>Eldoret, Kenya</p></div>
     <div><span>WhatsApp us</span><a href="https://wa.me/254725919132?text=Hello%20Timba%20XO%2C%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noreferrer">0725 919 132</a><p>Open 24 hours</p></div>
-    <a class="footer-action" href="./visit.html">Plan your night <b>↗</b></a>
-    <small>© <span data-year></span> Timba XO. All nights reserved.</small>
+    <div class="footer-socials"><span>Socials</span><a class="mini-social" href="https://www.instagram.com/timbaxo/?hl=en" target="_blank" rel="noreferrer"><span class="social-icon social-icon--instagram" aria-hidden="true"><i></i></span>Instagram</a><a class="mini-social" href="https://www.facebook.com/XOTimba/" target="_blank" rel="noreferrer"><span class="social-icon social-icon--facebook" aria-hidden="true">f</span>Facebook</a></div>
+    <a class="footer-action" href="./visit.html">Plan your night <b>&rarr;</b></a>
+    <small>&copy; <span data-year></span> Timba XO. All nights reserved.</small>
   </footer>
   <script src="./app.js"></script>
 </body>
