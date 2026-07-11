@@ -8,7 +8,15 @@ const allowedOrigins = new Set([
   "http://localhost:8765",
 ]);
 
-const allowedGuests = new Set(["2–4 guests", "5–8 guests", "9–15 guests", "16+ guests / event"]);
+const allowedGuests = new Set([
+  "2-4 guests",
+  "2\u20134 guests",
+  "5-8 guests",
+  "5\u20138 guests",
+  "9-15 guests",
+  "9\u201315 guests",
+  "16+ guests / event",
+]);
 const allowedPlans = new Set(["Dinner and drinks", "Lounge table", "VVIP night out", "Birthday or celebration", "Private event enquiry"]);
 
 const isAllowedOrigin = (origin: string) =>
