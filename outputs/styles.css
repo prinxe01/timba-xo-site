@@ -122,11 +122,11 @@ h1 em, h2 em { color: var(--orange); font-style: italic; font-weight: 700; }
 .manifesto h2, .proof h2, .section-heading h2, .journey h2, .reservation h2 { margin: .1rem 0 2.3rem; font-family: var(--display); font-size: clamp(4rem,8.2vw,8.5rem); text-transform: uppercase; line-height: .82; letter-spacing: -.04em; }
 .manifesto .lede { max-width: 700px; margin-left: auto; color: rgba(240,234,223,.66); line-height: 1.9; font-size: 1rem; }
 
-.moods { display: grid; grid-template-columns: 1.2fr .8fr; gap: 1.2rem; align-items: start; }
+.moods { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(320px, .88fr); gap: 1.2rem; align-items: stretch; }
 .mood-card { position: relative; min-height: 430px; overflow: hidden; }
-.mood-card--wide { min-height: 660px; grid-row: span 2; }
+.mood-card--wide { min-height: clamp(660px, 76vw, 880px); grid-row: span 2; height: 100%; }
 .mood-card--tall { min-height: 480px; }
-.mood-card--small { min-height: 360px; margin-left: 22%; }
+.mood-card--small { min-height: 360px; margin-left: 0; }
 .mood-card--graphic { background: linear-gradient(145deg, var(--orange), #ff8a32); color: var(--ink); }
 .mood-card--graphic::after { background: linear-gradient(0deg, rgba(8,10,12,.22), transparent 70%); }
 .mood-card__number { padding: 1.2rem 1.6rem; font-family: var(--display); font-size: clamp(7rem,12vw,12rem); font-weight: 800; line-height: .8; letter-spacing: -.07em; }
