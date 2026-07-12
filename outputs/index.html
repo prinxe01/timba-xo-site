@@ -85,6 +85,9 @@
     </div>
 
     <section class="manifesto section-pad">
+      <div class="manifesto-terrain" aria-hidden="true">
+        <canvas data-terrain-canvas></canvas>
+      </div>
       <div class="manifesto__label reveal"><span>02</span> The XO feeling</div>
       <div class="manifesto__copy reveal">
         <p>Some places serve a night out.</p>
@@ -152,11 +155,11 @@
         <p class="kicker dark"><span></span> The city has spoken</p>
         <h2>Big room.<br><em>Bigger reputation.</em></h2>
       </div>
-      <div class="proof__stats reveal stagger-group">
-        <div class="reveal-card"><strong>4.2</strong><span>Google rating</span></div>
-        <div class="reveal-card"><strong>1,286</strong><span>Google reviews</span></div>
-        <div class="reveal-card"><strong>51K+</strong><span>Instagram community</span></div>
-        <div class="reveal-card"><strong>24/7</strong><span>Always open</span></div>
+      <div class="proof__stats reveal stagger-group" data-stat-grid>
+        <div class="reveal-card" data-stat-card><strong data-stat-value data-stat-type="decimal" data-stat-target="4.2" data-stat-final="4.2" aria-label="4.2">4.2</strong><span>Google rating</span></div>
+        <div class="reveal-card" data-stat-card><strong data-stat-value data-stat-type="integer" data-stat-target="1286" data-stat-final="1,286" aria-label="1,286">1,286</strong><span>Google reviews</span></div>
+        <div class="reveal-card" data-stat-card><strong data-stat-value data-stat-type="compact" data-stat-target="51" data-stat-final="51K+" aria-label="51K+">51K+</strong><span>Instagram community</span></div>
+        <div class="reveal-card" data-stat-card><strong class="stat-reveal" data-stat-value data-stat-type="reveal" data-stat-final="24/7" aria-label="24/7"><span>24/7</span></strong><span>Always open</span></div>
         <a class="proof-review-link reveal-card" href="https://www.google.com/search?q=Timba+XO+Eldoret+Google+reviews" target="_blank" rel="noreferrer" data-google-review-link>
           <span>Leave a rating</span>
           <strong>Review XO</strong>
